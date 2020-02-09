@@ -69,3 +69,5 @@ yarn-debug.log*
 
 # DSStore
 .DS_Store
+
+.history/
