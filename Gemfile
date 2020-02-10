@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 group :development, :test do
@@ -66,3 +66,6 @@ gem 'dotenv-rails'
 
 # PWA対応
 gem 'serviceworker-rails'
+
+# font awesome5
+gem 'font_awesome5_rails'
