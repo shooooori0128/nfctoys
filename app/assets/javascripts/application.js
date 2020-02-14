@@ -12,7 +12,5 @@
  *
  *= require_tree .
  *= require_self
+ *= require serviceworker-companion
  */
-
-@import 'font_awesome5_webfont';
-@import 'font_awesome5.css';

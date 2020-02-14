@@ -13,6 +13,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
+
+    <%= javascript_include_tag 'application' %>
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <% ### PWA Compat(manifest) ### %>
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <% ### PWA Compat ### %>
+    <% # 注) PWA Compat の manifestの後に詠込む %>
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+    integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+    crossorigin="anonymous"></script>
   </head>
 
   <body>
