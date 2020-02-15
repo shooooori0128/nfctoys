@@ -2,13 +2,11 @@
   <v-app id="app">
     <v-card class="hide-overflow" flat tile height="800">
       <v-toolbar dark color="red darken-1">
-        <v-container>
-          <v-layout align-center justify-center column fill-height>
-            <v-flex xs12>
-              <v-toolbar-title class="headline">NFCToy</v-toolbar-title>
-            </v-flex>
-          </v-layout>
-        </v-container>
+        <v-layout align-center justify-center row fill-height wrap>
+          <v-flex xs12 class="text-xs-center">
+            <span class="display-1 font-weight-black">NFCToy</span>
+          </v-flex>
+        </v-layout>
       </v-toolbar>
 
       <v-card-text>
