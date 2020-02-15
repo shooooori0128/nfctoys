@@ -8,12 +8,8 @@
       </v-layout>
     </v-toolbar>
 
-    <v-container fluid>
-      <v-layout align-center justify-center column fill-height>
-        <v-flex xs12>
-          <router-view />
-        </v-flex>
-      </v-layout>
+    <v-container>
+      <router-view />
     </v-container>
 
     <v-bottom-nav :active.sync="bottomNav" :value="true" color="red darken-1">

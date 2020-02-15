@@ -1,20 +1,16 @@
 <template>
-  <div>
-    <v-container fluid>
-      <v-layout align-center justify-center column fill-height>
-        <v-flex xs-12>
-          <v-subheader class="title">
-            NFCタグをかざし、ボタンを押しながら喋ってください。ボタンを離すと録音が停止されます。
-          </v-subheader>
-        </v-flex>
+  <v-layout align-center justify-center column pt-5>
+    <v-flex xs12>
+      <v-subheader class="title">
+        ボタンを押しながら喋ってください
+      </v-subheader>
 
-        <v-flex xs-12>
-          <v-btn large icon color="red lighten-4" @touchstart.prevent="recStart()" @touchend.prevent="isSave()">
-            <v-icon large style="font-size: 108px;">fas fa-microphone-alt</v-icon>
-          </v-btn>
-        </v-flex>
-      </v-layout>
-    </v-container>
+      <div class="text-xs-center">
+        <v-btn large icon color="red lighten-4" @touchstart.prevent="recStart()" @touchend.prevent="isSave()">
+          <v-icon large style="font-size: 108px;">fas fa-microphone-alt</v-icon>
+        </v-btn>
+      </div>
+    </v-flex>
 
     <base-confirm-dialog 
       :isShow="isShowBaseConfirmDialog"
@@ -24,7 +20,7 @@
       <p class="subheading">今話した内容をNFCタグに記録します。</p>
       <p class="subheading">よろしいですか？</p>
     </base-confirm-dialog>
-  </div>
+  </v-layout>
 </template>
 
 <script lang="ts">

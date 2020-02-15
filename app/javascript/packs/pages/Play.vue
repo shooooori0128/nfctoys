@@ -1,19 +1,16 @@
 <template>
-  <v-container fluid>
-    <v-layout align-center justify-center column fill-height>
-      <v-flex xs-12>
-        <v-subheader class="title">
-          NFCタグをかざすと音声を再生します
-        </v-subheader>
-      </v-flex>
-
-      <v-flex xs-12>
+  <v-layout align-center justify-center column pt-5>
+    <v-flex xs12>
+      <v-subheader class="title">
+        NFCタグをかざすと音声を再生します
+      </v-subheader>
+      <div class="text-xs-center">
         <v-btn large icon color="red lighten-4" @click="readNFC()">
           <v-icon large style="font-size: 108px;">play_arrow</v-icon>
         </v-btn>
-      </v-flex>
-    </v-layout>
-  </v-container>
+      </div>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script lang="ts">
