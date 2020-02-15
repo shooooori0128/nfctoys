@@ -68,4 +68,4 @@ gem 'dotenv-rails'
 gem 'serviceworker-rails'
 
 # font awesome5
-gem 'font_awesome5_rails'
+gem 'font-awesome-sass'
