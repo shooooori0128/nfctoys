@@ -1,38 +1,32 @@
 <template>
   <v-app id="app">
-    <v-card class="hide-overflow" flat tile height="800">
-      <v-toolbar dark color="red darken-1">
-        <v-layout align-center justify-center row fill-height wrap>
-          <v-flex xs12 class="text-xs-center">
-            <span class="display-1 font-weight-black">NFCToy</span>
-          </v-flex>
-        </v-layout>
-      </v-toolbar>
+    <v-toolbar dark color="red darken-1">
+      <v-layout align-center justify-center row fill-height wrap>
+        <v-flex xs12 class="text-xs-center">
+          <span class="display-1 font-weight-black">NFCToy</span>
+        </v-flex>
+      </v-layout>
+    </v-toolbar>
 
-      <v-card-text>
-        <v-container>
-          <v-layout align-center justify-center column fill-height>
-            <v-flex xs12>
-              <router-view />
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card-text>
+    <v-container fluid>
+      <v-layout align-center justify-center column fill-height>
+        <v-flex xs12>
+          <router-view />
+        </v-flex>
+      </v-layout>
+    </v-container>
 
-      <v-card-actions>
-        <v-bottom-nav :active.sync="bottomNav" :value="true" color="red darken-1">
-          <v-btn flat dark value="rec" @click.stop="$_pageTransition('/Rec')">
-            <span class="white--text">録音</span>
-            <v-icon>mic</v-icon>
-          </v-btn>
+    <v-bottom-nav :active.sync="bottomNav" :value="true" color="red darken-1">
+      <v-btn flat dark value="rec" @click.stop="$_pageTransition('/Rec')">
+        <span class="white--text">録音</span>
+        <v-icon>mic</v-icon>
+      </v-btn>
 
-          <v-btn flat dark value="play" @click.stop="$_pageTransition('/')">
-            <span class="white--text">読取</span>
-            <v-icon>play_arrow</v-icon>
-          </v-btn>
-        </v-bottom-nav>
-      </v-card-actions>
-    </v-card>
+      <v-btn flat dark value="play" @click.stop="$_pageTransition('/')">
+        <span class="white--text">読取</span>
+        <v-icon>play_arrow</v-icon>
+      </v-btn>
+    </v-bottom-nav>
   </v-app>
 </template>
 
@@ -89,3 +83,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.v-card__actions {
+  padding: 0px !important;
+}
+</style>
