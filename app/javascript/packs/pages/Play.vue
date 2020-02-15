@@ -38,10 +38,10 @@ export default Vue.extend({
 
 <style scoped>
 .v-btn--icon.v-btn--large {
-  width: 220px;
+  width: 220px !important;
 }
 
 .v-btn--large {
-  height: 220px;
+  height: 220px !important;
 }
 </style>
